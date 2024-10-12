@@ -26,6 +26,7 @@ class SEO
                             ->append(Str::of(__('filament-seo::translations.characters'))->lower());
                     })
                     ->reactive()
+                    ->translatable()
                     ->columnSpan(2),
                 'author' => TextInput::make('author')
                     ->translateLabel()
